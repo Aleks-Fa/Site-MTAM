@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nICHe</title>
+    <link rel="stylesheet" href="NICHE.css">
+    <link rel="stylesheet" href="https://unpkg.com/7.css">
+    <!--link pro 7.css https://khang-nd.github.io/7.css para mais informações-->
+    <link rel="icon" href="icon.ico">
+</head>
+
+<body class="zoom-font">
+    <div class="window active" style="max-width: 100px">
+        <div class="title-bar">
+            <div class="title-bar-text">Tamaño de fuente</div>
+        </div>
+        <div class="window-body has-space">
+            <input type="range" id="fontRange" min="12" max="23" value="16">
+        </div>
+    </div>
+    <div class="window active btn-tema" style="max-width: 200px; position: fixed; bottom: 20px; right: 20px;">
+        <div class="title-bar">
+            <div class="title-bar-text"></div>
+        </div>
+        <div class="window-body has-space">
+            <button>
+               cambiar entre modo claro y oscuro
+            </button>
+        </div>
+    </div>
+    <!-- Aqui é onde começa a aba do windows -->
+    <div class="container">
+        <div class="window active; direita" style="max-width: 50%; margin: auto">
+        <div class="title-bar">
+            <div class="title-bar-text"></div>
+            <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body has-space">
+            <menu role="tablist" aria-label="Window with Tabs">
+            <button role="tab" aria-controls="intro" aria-selected="true">introduction</button>
+            <button role="tab" aria-controls="2000">2000</button>
+            <button role="tab" aria-controls="2001">Películas</button>
+             <button role="tab" aria-controls="2002">Películas</button>
+            <button role="tab" aria-controls="2003">álbumes</button>
+            <button role="tab" aria-controls="2004">Juegos</button>
+            <button role="tab" aria-controls="2005">vídeos</button>
+            </menu>
+            <article role="tabpanel" id="intro">
+                ¿Alguna vez te has encontrado con un sitio web que parece que la última vez que se actualizó, el Mundial todavía se estaba celebrando en Sudáfrica en 2010? Bueno, creo que todos hemos tenido esa experiencia, ¿verdad? Esa sensación de nostalgia al ver cómo han cambiado las cosas, mezclada con esa sensación de añoranza.Esto me motivó a crear un sitio web que evocara esa nostalgia usando el estilo de diseño de Aero Frutiger, muy común en aquella época, junto con otras referencias a la cultura pop de los 2000, especialmente las que me gustan...
+
+                Bienvenido a *****
+            </article>
+            <article role="tabpanel" hidden id="2000">
+               <h3> La década del 2000 y el comienzo de un nuevo milenio.</h3>
+La década del 2000 fue una década única para la cultura pop. El nacimiento de las nuevas tecnologías y la esperanza de un futuro supermoderno ejercieron una fuerte influencia en nuestra cultura, afectando no solo la estética, sino también el consumo. Vimos el nacimiento de los videojuegos, los celulares, las películas, los álbumes de música, entre otras cosas... En este sitio, enumeraré, según mis gustos, los aspectos principales de cada tema.
+            </article>
+            <article role="tabpanel" hidden id="2001">
+                <h3>Mis películas favoritas de los años 2000.</h3>
+                <img height = "150" width = "250" src="sith.jpg"> 
+                Star Wars: Episode III - La venganza de los Sith.  - 2005 
+                 
+                <img height = "150" width = "250" src="drive.jpg"> Mulholland Drive - 2001
+            </article>
+            <article role="tabpanel" hidden id="2002">
+                <img height = "150" width = "250" src="yiyi.jpg"> 
+                YiYi: a one and two - 2000
+            
+               <br> <img height = "150" width = "250" src="mood.jpg"> 
+                Deseando amar: - 2000
+            </article>
+            <article role="tabpanel" hidden id="2003">
+                    <h3> Mis álbumes favoritos de los años 2000.</h3>
+                <img height = "150" width = "250" src="in.jpg">  in rainbows - radiohead  
+               <br> <img height = "150" width = "250" src="modal.jpg"> Modal soul - Nujabes</br>
+                <img height = "150" width = "250" src="quasi.jpg"> The unseen - Quasimoto 
+            </article>
+            <article role="tabpanel" hidden id="2004">
+                <h3>Mis juegos favoritos de los años 2000.</h3>
+                <img height = "150" width = "250" src="nv.jpg"> <img height = "150" width = "250" src="sk8.jpg"> skate 3
+                      <Br> Fallout New Vegas
+                  <br> <img height = "150" width = "250" src="BO1.jpg">    <img height = "150" width = "250" src="gta.jpg">Gta IV
+                  <br> Call of duty Black ops 1
+            </article>
+            <article role="tabpanel" hidden id="2005">
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/zpDH4pZvX6o?si=t_SVlOds6QOn8xjr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </article>
+            <article role="tabpanel" hidden id="2006">
+                2000
+            </article>
+            <article role="tabpanel" hidden id="2007">
+                2000
+            </article>
+            <article role="tabpanel" hidden id="2008">
+                2000
+            </article>
+            <article role="tabpanel" hidden id="2009">
+                2000
+            </article>
+            <article role="tabpanel" hidden id="2010">
+                2000
+            </article>
+
+            <section style="display: flex; justify-content: flex-end; gap: 6px">
+            <button class="default">OK</button>
+            <button>Cancel</button>
+            </section>
+        </div>
+        </div>
+    </div>
+    <div class="esquerda">
+        <div role="tooltip" class="is-top is-right" style="margin-left: 20px;">
+           ¿Quieres cambiar de idioma? 
+            <br>
+            <br>
+            <a href="IMAGINARIO.html">
+                <button>Português</button>
+            </a>
+            <a href="IMAGINARIO_en.html">
+                <button>Inglés</button>
+            </a>
+            <a href="IMAGINARIO_ds.html">
+                <button>Español</button>
+            </a>
+        </div>
+        <img src="clippy.webp">
+    </div>
+</body>
+<script>
+  const tablist = document.querySelector('[role="tablist"]');
+  const tabs = tablist.querySelectorAll('[role="tab"]');
+  const panels = [...document.querySelectorAll('[role="tabpanel"]')];
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      // desmarca tudo
+      tabs.forEach(t => t.setAttribute('aria-selected', 'false'));
+      panels.forEach(p => p.hidden = true);
+
+      // marca a aba clicada
+      tab.setAttribute('aria-selected', 'true');
+      const panel = document.getElementById(tab.getAttribute('aria-controls'));
+      if (panel) panel.hidden = false;
+    });
+  });
+
+  const botaoTema = document.querySelector('.btn-tema');
+
+    botaoTema.addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+    });
+
+    const slider = document.getElementById('fontRange');
+
+    function applyZoom(size) {
+        document.documentElement.style.setProperty("--zoom-size", size + "px");
+        localStorage.setItem("fontSize", size);
+    }
+
+    slider.addEventListener('input', () => {
+        applyZoom(slider.value);
+    });
+
+    // carregar tamanho salvo
+    const saved = localStorage.getItem("fontSize");
+    applyZoom(saved ? saved : 16);
+    if (saved) slider.value = saved;
+</script>
+</html>

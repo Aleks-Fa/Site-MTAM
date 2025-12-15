@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nICHe</title>
+    <link rel="stylesheet" href="NICHE.css">
+    <link rel="stylesheet" href="https://unpkg.com/7.css">
+    <!--link pro 7.css https://khang-nd.github.io/7.css para mais informações-->
+    <link rel="icon" href="icon.ico">
+</head>
+
+<body class="zoom-font">
+    <div class="window active" style="max-width: 100px">
+        <div class="title-bar">
+            <div class="title-bar-text">Font size</div>
+        </div>
+        <div class="window-body has-space">
+            <input type="range" id="fontRange" min="12" max="23" value="16">
+        </div>
+    </div>
+    <div class="window active btn-tema" style="max-width: 200px; position: fixed; bottom: 20px; right: 20px;">
+        <div class="title-bar">
+            <div class="title-bar-text"></div>
+        </div>
+        <div class="window-body has-space">
+            <button>
+              Switch between light and dark themes.
+            </button>
+        </div>
+    </div>
+    <!-- Aqui é onde começa a aba do windows -->
+    <div class="container">
+        <div class="window active; direita" style="max-width: 50%; margin: auto">
+        <div class="title-bar">
+            <div class="title-bar-text"></div>
+            <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body has-space">
+            <menu role="tablist" aria-label="Window with Tabs">
+            <button role="tab" aria-controls="intro" aria-selected="true">introduction</button>
+            <button role="tab" aria-controls="2000">2000</button>
+            <button role="tab" aria-controls="2001">Movies</button>
+             <button role="tab" aria-controls="2002">Movies</button>
+            <button role="tab" aria-controls="2003">Albuns</button>
+            <button role="tab" aria-controls="2004">Games</button>
+            <button role="tab" aria-controls="2005">video</button>
+            </menu>
+            <article role="tabpanel" id="intro">
+                Have you ever come across a website that looks like the last time it was updated, the World Cup was still in South Africa back in 2010?
+                Well, I think we've all had that experience, right? That feeling of nostalgia when you see how things have changed, mixed with that feeling of longing.This made me want to create a website that could recapture that nostalgia using the Aero Frutiger design style.
+                Very common at the time, along with other references, to comment on the pop culture of the 2000s, especially the ones I like...
+
+                Welcome to *****
+            </article>
+            <article role="tabpanel" hidden id="2000">
+                <h3>The 2000s and the beginning of a new millennium.</h3>
+                The 2000s were a very unique decade for pop culture. The birth of new technologies and the hope for a super-advanced future created a very strong influence on our culture, affecting not only aesthetics but also consumption. We saw the birth of games, cell phones, movies, music albums, among other things... On this site, I will list, based on my tastes, the main things in each theme.
+            </article>
+            <article role="tabpanel" hidden id="2001">
+                <h3>My favorite movies of the 2000s:</h3>
+                <img height = "150" width = "250" src="sith.jpg"> 
+                Star Wars: Episode III - Revenge Of The Sith - 2005 
+                 
+                <img height = "150" width = "250" src="drive.jpg"> Mulholland Drive - 2001
+            </article>
+            <article role="tabpanel" hidden id="2002">
+                <img height = "150" width = "250" src="yiyi.jpg"> 
+                YiYi: a one and two - 2000
+            
+               <br> <img height = "150" width = "250" src="mood.jpg"> 
+                In the Mood for Love - 2000
+            </article>
+            <article role="tabpanel" hidden id="2003">
+                    <h3> My favorite albums of the 2000s:</h3>
+                <img height = "150" width = "250" src="in.jpg">  in rainbows - radiohead  
+               <br> <img height = "150" width = "250" src="modal.jpg"> Modal soul - Nujabes</br>
+                <img height = "150" width = "250" src="quasi.jpg"> The unseen - Quasimoto 
+            </article>
+            <article role="tabpanel" hidden id="2004">
+                <h3>My favorite games  of the 2000s:</h3>
+                <img height = "150" width = "250" src="nv.jpg"> <img height = "150" width = "250" src="sk8.jpg"> skate 3
+                      <Br> Fallout New Vegas
+                  <br> <img height = "150" width = "250" src="BO1.jpg">    <img height = "150" width = "250" src="gta.jpg">Gta IV
+                  <br> Call of duty Black ops 1
+            </article>
+            <article role="tabpanel" hidden id="2005">
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/zpDH4pZvX6o?si=t_SVlOds6QOn8xjr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </article>
+            <article role="tabpanel" hidden id="2006">
+                2000
+            </article>
+            <article role="tabpanel" hidden id="2007">
+                2000
+            </article>
+            <article role="tabpanel" hidden id="2008">
+                2000
+            </article>
+            <article role="tabpanel" hidden id="2009">
+                2000
+            </article>
+            <article role="tabpanel" hidden id="2010">
+                2000
+            </article>
+
+            <section style="display: flex; justify-content: flex-end; gap: 6px">
+            <button class="default">OK</button>
+            <button>Cancel</button>
+            </section>
+        </div>
+        </div>
+    </div>
+    <div class="esquerda">
+        <div role="tooltip" class="is-top is-right" style="margin-left: 20px;">
+            wish to change languages? 
+            <br>
+            <br>
+            <a href="IMAGINARIO.html">
+                <button>Portuguese</button>
+            </a>
+            <a href="IMAGINARIO_en.html">
+                <button>English</button>
+            </a>
+            <a href="IMAGINARIO_ds.html">
+                <button>Spanish</button>
+            </a>
+        </div>
+        <img src="clippy.webp">
+    </div>
+</body>
+<script>
+  const tablist = document.querySelector('[role="tablist"]');
+  const tabs = tablist.querySelectorAll('[role="tab"]');
+  const panels = [...document.querySelectorAll('[role="tabpanel"]')];
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      // desmarca tudo
+      tabs.forEach(t => t.setAttribute('aria-selected', 'false'));
+      panels.forEach(p => p.hidden = true);
+
+      // marca a aba clicada
+      tab.setAttribute('aria-selected', 'true');
+      const panel = document.getElementById(tab.getAttribute('aria-controls'));
+      if (panel) panel.hidden = false;
+    });
+  });
+
+  const botaoTema = document.querySelector('.btn-tema');
+
+    botaoTema.addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+    });
+
+    const slider = document.getElementById('fontRange');
+
+    function applyZoom(size) {
+        document.documentElement.style.setProperty("--zoom-size", size + "px");
+        localStorage.setItem("fontSize", size);
+    }
+
+    slider.addEventListener('input', () => {
+        applyZoom(slider.value);
+    });
+
+    // carregar tamanho salvo
+    const saved = localStorage.getItem("fontSize");
+    applyZoom(saved ? saved : 16);
+    if (saved) slider.value = saved;
+</script>
+</html>
