@@ -1,0 +1,122 @@
+body.dark {
+  background: #121212;
+  color: #ffffff;
+}
+body {
+  background: #ffffff;
+  color: #000000;
+  transition: 0.3s;
+  background-image: url('tap.webp');
+}
+#fontRange {
+    width: 70px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+    align-items: center;
+      width: 100%;
+      height: 100%;
+      position: relative;
+  /*justify-content: space-around; 
+  align-items: center; 
+  gap: 20px;*/
+}
+
+.centro {
+      width: 200px;
+      height: 200px;
+      background-color: lightblue;
+    }
+
+.esquerda {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.btn-tema {
+  position: fixed;      /* posição fixa na tela */
+  bottom: 20px;         /* distância da borda inferior */
+  right: 20px;          /* distância da borda direita */
+}
+
+/* Tema escuro para 7.css */
+body.dark .window {
+    background: #1b1b1b !important;
+    color: white !important;
+    border-color: #555 !important;
+}
+
+body.dark .title-bar {
+    background: #2c2c2c !important;
+    color: white !important;
+    border-bottom: 1px solid #444 !important;
+}
+
+body.dark .title-bar-controls button {
+    background: #444 !important;
+    border-color: #666 !important;
+}
+
+body.dark .window-body {
+    background: #222 !important;
+    color: white !important;
+    border-top: 1px solid #444 !important;
+}
+
+body.dark menu[role="tablist"] button {
+    background: #333 !important;
+    color: white !important;
+    border-color: #555 !important;
+}
+
+body.dark menu[role="tablist"] button[aria-selected="true"] {
+    background: #555 !important;
+}
+
+body.dark article[role="tabpanel"] {
+    background: transparent !important;
+    color: white !important;
+}
+
+/* Caixa de diálogo tipo tooltip */
+body.dark [role="tooltip"] {
+    background: #1e1e1e !important;
+    color: white !important;
+    border: 1px solid #555 !important;
+    box-shadow: 0 0 10px #0006 !important;
+}
+
+/* Botões */
+body.dark button {
+    background: #333 !important;
+    color: white !important;
+    border-color: #666 !important;
+}
+
+body.dark button.default {
+    background: #4a4a4a !important;
+    border-color: #777 !important;
+}
+
+/* Fonte geral */
+.zoom-font {
+    font-size: var(--zoom-size);
+}
+
+/* Botões do 7.css */
+.zoom-font button,
+.zoom-font .title-bar,
+.zoom-font .window-body,
+.zoom-font menu[role="tablist"] button,
+.zoom-font article[role="tabpanel"],
+.zoom-font [role="tooltip"] {
+    font-size: var(--zoom-size) !important;
+}
+
+
+        
